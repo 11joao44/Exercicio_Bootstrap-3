@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Sofia+Sans+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>Pagina de vendas</title>
+</head>
+<body>
+
+        <!-- Cabeçalho -->
+        <header class="navbar navbar-expand-lg sticky-top p-3" id="cabecalho">
+            <div class="container">
+                <h1 class="navbar-brand m-0">
+                    <i class="bi bi-award m-1"></i>
+                    Game Awards
+                </h1>
+                <button class="navbar-toggler" data-bs-toggle="collapse"  data-bs-target="#menu-lobby">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="navbar-collapse collapse justify-content-end" id="menu-lobby"> 
+                    <ul class="nav nav-pills d-block d-md-flex">
+                        <li class="nav-item fw-bold">
+                            <a class="nav-link m1" href="#slide-carousel">
+                                <i class="bi bi-calendar-check me-1"></i>
+                                Inicio
+                            </a>
+                        </li>
+                        <li class="nav-item fw-bold">
+                            <a class="nav-link m2" href="#games-em-promo">
+                                <i class="bi bi-tags-fill m-1"></i>
+                                Games em Promoção
+                            </a>
+                        </li>
+                        <li class="nav-item fw-bold">
+                            <a class="nav-link m3" href="#jogos-favoritos">
+                                <i class="bi bi-calendar-check me-1"></i>
+                                Jogos Favoritos
+                            </a>
+                        </li>
+                        <li class="nav-item fw-bold">
+                            <a class="nav-link m4" href="#fale-conosco">
+                                <i class="bi bi-chat-left-text me-1"></i>
+                                Fale conosco
+                            </a>
+                        </li>
+                    </ul>
+                    <form class="form-inline d-flex">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-dark my-2 my-sm-0" type="submit">Buscar</button>
+                      </form>
+                </nav>
+            </div>
+        </header>
+
+<div class="container" data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+
+    <!-- Carrousel de imagens-->
+    <div id="slide-carousel" class="carousel carousel-fade slide" data-bs-ride="carousel" data-bs-wrap="true">
+        <h2 class="my-3">Jogos em Destaque</h2>
+        <div class="carousel-inner">
+            <div data-bs-interval="2500" class="carousel-item active">
+                <img class="d-block w-100" src="/imagens/header.jpg" alt="Spider-Man">
+                <div class="carousel-caption">
+                    <h2>Spider-Man</h2>
+                    <a href="#" class="btn btn-primary justify-content-start">Comprar</a>
+                </div>
+            </div>
+            <div data-bs-interval="2500" class="carousel-item">
+                <img class="d-block w-100" src="/imagens/resident.jpg" alt="Resident Evl 4">
+                <div class="carousel-caption">
+                    <h2>Resident Evil 4</h2>
+                </div>
+            </div>
+            <div data-bs-interval="2500" class="carousel-item">
+                <img class="d-block w-100" src="/imagens/hogwats.jpg" alt="Hogwats Legacy">
+                <div class="carousel-caption">
+                    <h2>Hogwarts Legacy</h2>
+                </div>
+            </div>
+            <div data-bs-interval="2500" class="carousel-item">
+                <img class="d-block w-100" src="/imagens/red dead.jpg" alt="Red Dead Redemption 2">
+                <div class="carousel-caption">
+                    <h2>Red Dead Redemption 2</h2>
+                </div>
+            </div>
+            <div data-bs-interval="2500" class="carousel-item">
+                <img class="d-block w-100" src="/imagens/tlou2.jpg" alt="tlou2">
+                <div class="carousel-caption">
+                    <h2>The Last of us 2</h2>
+                </div>
+            </div>
+            <div data-bs-interval="2500" class="carousel-item">
+                <img class="d-block w-100" src="/imagens/elden ring.jpg" alt="Elden Ring">
+                <div class="carousel-caption">
+                    <h2>Elden Ring</h2>
+                </div>
+            </div>
+            <div data-bs-interval="2500" class="carousel-item">
+                <img class="d-block w-100" src="/imagens/uncharted.jpg" alt="UNCHARTED">
+                <div class="carousel-caption">
+                    <h2>UNCHARTED™: Legacy of Thieves Collection</h2>
+                </div>
+            </div>
+        </div>
+        <button data-bs-target="#slide-carousel" data-bs-slide="prev" class="carousel-control-prev" type="button">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button data-bs-target="#slide-carousel" data-bs-slide="next" class="carousel-control-next" type="button">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#slide-carousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#slide-carousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#slide-carousel" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#slide-carousel" data-bs-slide-to="3"></button>
+            <button type="button" data-bs-target="#slide-carousel" data-bs-slide-to="4"></button>
+            <button type="button" data-bs-target="#slide-carousel" data-bs-slide-to="5"></button>
+        </div>
+    </div>
+
+    <!-- Grids -->
+    <div class="row" id="games-em-promo">
+            <h2>Games em Promoção</h2>
+            <div class="col">
+                <div class="card text-bg-dark">
+                    <img src="https://images.greenmangaming.com/95332937821c4730a87988136c149712/7c683c5d547d45c6ba5d5cc4cf3f81e9.jpg" alt="Street Fighter 6 Ultimate Edition">
+                    <div class="card-img-overlay">
+                        <h4 class="card-tittle">Street Fighter 6 Ultimate Edition</h4>
+                    </div>
+                    <a href="#" class="btn btn-primary">Comprar</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card text-bg-dark">
+                    <img src="https://images.greenmangaming.com/610afb3324cf479980995069ef730b0c/86d71d23c76746b98b20617efd55c98d.jpg" alt="Gotham Knights">
+                    <div class="card-img-overlay">
+                        <h4 class="card-tittle">Gotham Knights</h4>
+                    </div>
+                    <a href="#" class="btn btn-primary">Comprar</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card text-bg-dark">
+                    <img src="https://images.greenmangaming.com/cd153a43532645718915a72654b6f422/ea051750e4464401b098fd54d93606e6.jpg" alt="Forspoken Digital Deluxe Edition">
+                    <div class="card-img-overlay">
+                        <h4 class="card-tittle">Forspoken Digital Deluxe Edition</h4>
+                    </div>
+                    <a href="#" class="btn btn-primary">Comprar</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card text-bg-dark">
+                    <img src="https://images.greenmangaming.com/930170cfbc3c4652bc078f7959f88872/de24ba8030794d39a166814870ea40a2.jpg" alt="Resident Evil Village">
+                    <div class="card-img-overlay">
+                        <h4 class="card-tittle">Resident Evil Village"</h4>
+                    </div>
+                    <a href="#" class="btn btn-primary">Comprar</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card text-bg-dark">
+                    <img src="https://images.greenmangaming.com/24aae834914b474798fd8ac782059c39/022075da84224cbb995cea116028c6c8.jpg" alt="Marvel’s Spider-Man Remastered">
+                    <div class="card-img-overlay">
+                        <h4 class="card-tittle">Marvel’s Spider-Man Remastered</h4>
+                    </div>
+                    <a href="#" class="btn btn-primary">Comprar</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card text-bg-dark">
+                    <img src="https://images.greenmangaming.com/4a637328cfd144d3944f5ba9af5cd038/bac985947bc841c6b187223049979024.jpg" alt="Batman Arkham Origins">
+                    <div class="card-img-overlay">
+                        <h4 class="card-tittle">Batman Arkham Origins™</h4>
+                    </div>
+                    <a href="#" class="btn btn-primary">Comprar</a>
+                </div>
+            </div>
+     </div>
+
+     <!-- Destaque 1 -->
+     <div class="row">
+        <div class="col">
+            <div class="card text-bg-dark card-destaque">
+                <img class="d-block w-100 pre-venda" src="/imagens/the-last-of-us-part-1.jpg">
+                <div class="card-img-overlay">
+                    <h4 class="card-tittle">Pré-venda | Garanta já o seu!</h4>
+                    <a href="#" class="btn btn-primary">Conferir</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jogos Favoritos -->
+<div class="row" id="jogos-favoritos">
+    <h2 class="my-3">Jogos Favoritos</h2>
+    <div class="col">
+        <div class="card text-bg-dark">
+            <img src="https://images.greenmangaming.com/c18a6b581b2d49488cd2e342ee5dc475/54f139ac380744caab93fdad1f6fa7bd.jpg" alt="Guardiões das Galaxias">
+            <div class="card-img-overlay d-flex jogos-favoritos">
+                <h4 class="card-tittle">Guardiões das Galaxias</h4>
+                <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card text-bg-dark">
+            <img src="https://images.greenmangaming.com/6ecde47b2c4d4f119de596d11088d6ad/4c7eabfb029d4371ae0bb06abafe42dc.jpg" alt="God of War">
+            <div class="card-img-overlay d-flex jogos-favoritos">
+                <h4 class="card-tittle">God of War</h4>
+                <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card text-bg-dark">
+            <img src="https://images.greenmangaming.com/eb50e951e7094c80bb377640857842d6/564deab21087418ea3b7cd452351427c.jpg" alt="Horizon Zero Dawn">
+            <div class="card-img-overlay d-flex jogos-favoritos">
+                <h4 class="card-tittle">Horizon Zero Dawn™</h4>
+                <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card text-bg-dark">
+            <img src="https://images.greenmangaming.com/0c8ebb0655d7493da5b695cc573dbd87/a244d799503545458f7272555a4521cc.jpg" alt="UNCHARTED™ 4">
+            <div class=" card-img-overlay d-flex jogos-favoritos">
+                <h4 class="card-tittle">UNCHARTED™ 4</h4>
+                <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card text-bg-dark">
+            <img src="https://images.greenmangaming.com/a7c5745adaae437383db35a50cb6b0e5/cab3b7adcdc54c1f8fc33fca64c70839.jpg" alt="Marvel's Midnight Suns">
+            <div class="card-img-overlay d-flex jogos-favoritos">
+                <h4 class="card-tittle">Marvel's Midnight Suns</h4>
+                <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card text-bg-dark">
+            <img src="https://images.greenmangaming.com/a0d1da39d5db4aa58f255ab746b2171c/520841822a09489e95d3a459ed8a37ad.jpg" alt="Scott Pilgrim vs. The World">
+            <div class="card-img-overlay d-flex jogos-favoritos">
+                <h4 class="card-tittle">Scott Pilgrim vs. the World</h4>
+                <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section id="fale-conosco" class="pt-5 pb-5">
+    <div class="container">
+        <div class="row">
+            <h2 class="section-tittle text-center">Fale <span class="text-colored">conosco</span></h2>
+        </div>
+        <div class="row">
+            <div class="col-md-7 mb-5">
+                <form>
+                    <div class="mb-3">
+                        <label for="nome" class="form-label fw-bold text-colored">Seu nome</label>
+                        <input type="text" id="nome" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label fw-bold text-colored">Seu e-mail</label>
+                        <input type="text" id="email" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="telefone" class="form-label fw-bold text-colored">Seu telefone (Opcional)</label>
+                        <input type="tel" id="telefone" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensagem" class="form-label fw-bold text-colored">Sua mensagem</label>
+                        <textarea id="mensagem" class="form-control"></textarea>
+                    </div>
+                    <button type="button" class="btn fw-bold">Enviar</button>
+                </form>
+            </div>
+            <div class="col-md-5">
+                <div class="row">
+                    <h3 class="section-tittle fs-4 text-colored">
+                        <i class="bi bi-hand-thumbs-up-fill"></i>
+                        Redes sociais
+                    </h3>
+                    <ul class="social-links">
+                        <li class="fs-5">
+                            <a href="#">
+                                <i class="bi bi-facebook text-colored"></i>
+                            </a>
+                        </li>
+                        <li class="fs-5 ms-1 me-1">
+                            <a href="#">
+                                <i class="bi bi-instagram text-colored"></i>
+                            </a>
+                        </li>
+                        <li class="fs-5">
+                            <a href="#">
+                                <i class="bi bi-whatsapp text-colored"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="row mt-4">
+                    <h3 class="section-tittle fs-4 text-colored">
+                        <i class="bi bi-cursor-fill"></i>
+                        Endereço
+                    </h3>
+                    <p>Rua teste exmplo boostrap MT-VG n-349</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <script src="/lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,198 @@
+body {
+    background: #303030;
+    color: #fff;
+    font-family: 'Bebas Neue', cursive;
+}
+
+header {
+    background-color: #303030;
+    border-bottom: 1px solid #ffffffb2;
+}
+
+.navbar h1 {
+    font-size: 2em;
+    color: #fff;
+}
+
+.nav .nav-link.active {
+    background-color: #ffffff00 ;
+    border-top: 1px solid #fff ;
+}
+
+.navbar h1:hover {
+    color: #fff;
+}
+
+.card {
+    background-color: #df0f0f00;
+}
+
+.nav .m1,
+.nav .m2,
+.nav .m3,
+.nav .m4 {
+    color: #fff;
+    font-family:'Sofia Sans Condensed', sans-serif;
+    font-size: 1.5em;
+    border-top: 1px solid rgba(255, 0, 0, 0);
+    font-size: 1em;
+}
+
+.nav .m1:hover {
+    color: #ffee00d5;
+    border-top: 1px solid #ffee00d5;
+}
+
+.nav .m2:hover {
+    color: #df0f0f;
+    border-top: 1px solid #df0f0f;
+}
+
+.nav .m3:hover {
+    color: #06aa00;
+    border-top: 1px solid #06aa00;
+}
+
+.nav .m4:hover {
+    color: #2e69d8;
+    border-top: 1px solid #2e69d8;
+}
+
+.navbar {
+    margin-bottom: 25px;
+}
+
+.row {
+    margin-top: 35px;
+}
+
+.col {
+    margin-bottom: 24px;
+    width: 416px;
+}
+
+.card-destaque {
+    border: 1px solid #ffffff3a;
+}
+
+.pre-venda {
+    height: 350px;
+    width: 1300px;
+}
+
+.card-img-overlay {
+    background: linear-gradient(to bottom,rgba(0, 0, 0, 0.700), transparent);
+}
+
+.col-sm-7 h4 {
+    font-size: 1.1em;
+    align-items: center;
+    margin-top: 12px;
+    margin-left: 10px;
+}
+
+.navbar-toggler {
+    background-color: #fffffffb;
+    color: #fff;
+}
+
+.table-responsive li {
+    padding: 10px;
+}
+
+.table-responsive li img {
+    margin: 0 20px;
+}
+
+.table-responsive li h4,
+.table-responsive li h3 {
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+.container-fluid {
+    background: #ffffff00;
+}
+
+.navbar-brand {
+    color: #fff;
+}
+
+.social-links li {
+    list-style: none;
+    display: inline;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+#fale-conosco button {
+    background-color: #2e69d8;
+    color: #fff;
+    width: 50%;
+}
+
+.jogos-favoritos {
+    margin-top: 180px;
+    justify-content: space-between;
+    background: linear-gradient(to top,rgba(0, 0, 0, 0.700), transparent);
+}
+
+.card-img-overlay a {
+    height: 35px;
+    margin-top: -8px;
+}
+
+.carousel-item img {
+    height: 700px;
+}
+
+
+@media  (max-width:767px) {
+
+    .d-flex {
+        margin-top: 150px;
+        justify-content: space-between;
+        background: linear-gradient(to top,rgba(0, 0, 0, 0.700), transparent);
+    }
+
+    .card-img-overlay a {
+        height: 28px;
+        margin-top: -5px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 1023px) {
+    .col {
+        width: 336px;
+    }
+
+    .card h4 {
+    font-size: 20px;
+    }
+
+    .card a {
+        font-size: 12px;
+        padding: 6px;
+
+    }
+
+    .pre-venda {
+        height: 250px;
+    }
+
+    .d-flex {
+        margin-top: 140px;
+        justify-content: space-between;
+        background: linear-gradient(to top,rgba(0, 0, 0, 0.700), transparent);
+    }
+
+    .card-img-overlay a {
+        height: 28px;
+        margin-top: -5px;
+    }
+}
