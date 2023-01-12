@@ -19,6 +19,7 @@ header {
     border-top: 1px solid #fff ;
 }
 
+
 .navbar h1:hover {
     color: #fff;
 }
@@ -131,6 +132,10 @@ header {
     background-color: #2e69d8;
     color: #fff;
     width: 50%;
+}
+
+#fale-conosco {
+    letter-spacing: 2px;
 }
 
 .jogos-favoritos {
